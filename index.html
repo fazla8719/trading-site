@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section>
+
+        <h1>Trading Portfolio</h1>
+        <div class="available">
+            <p>Available Balance: $<span id="balance-total">00</span> </p>
+            <p>Available Bitcoin: <span id="bitcoin-total">0</span>BTC</p>
+            <P>Available Etherium: <span id="eth-total">0</span>ETH</P>
+        </div>
+        <div class="depo-money">
+            <h1>Deposit Money</h1>
+            <form action="">
+                <label for="depo-input">Deposit Money:</label>
+                <input type="text" id="depo-input" placeholder="Enter Deposit Amount">
+                <button id="deposit-btn">Deposit</button>
+            </form>
+        </div>
+        <div class="buy">
+            <h1>Buy Coins</h1>
+            <!-- bit buy -->
+            <div class="bit-buy">
+                <label for="buy-bicoin-input">Buy Bitcoin:</label>
+                <input  type="text" id="buy-bitcoin-input" placeholder="1 BTC = 10$">
+                <button id="buy-bitcoin-btn">Buy</button>
+            </div>
+            <br>
+            <!-- eth buy  -->
+            <div class="eth-buy">
+                <label for="buy-eth-input">Buy Ethereum:</label>
+                <input  type="text" id="buy-eth-input" placeholder="1 ETH = 5$">
+                <button id="buy-eth-btn">Buy</button>
+            </div>
+
+
+        </div>
+    </section>
+    <script src="function.js"></script>
+</body>
+
+</html>
